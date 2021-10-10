@@ -3,7 +3,7 @@
 Like [deploy-via-scp](https://github.com/horochx/deploy-via-scp), just add zola build step before that
 
 ```yaml
-uses: horochx/deploy-via-scp@master
+uses: chux0519/zola-scp-action
 with:
   local: localPath # eg: dist/*
   remote: ${{ secrets.REMOTE }} # eg: /home/github-action/www
