@@ -10,7 +10,7 @@ ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
-RUN apt-get update && apt-get install -y wget openssh
+RUN apt-get update && apt-get install -y wget openssh-client
 
 RUN wget -q -O - \
 "https://github.com/getzola/zola/releases/download/v0.14.1/zola-v0.14.1-x86_64-unknown-linux-gnu.tar.gz" \
