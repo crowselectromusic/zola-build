@@ -1,0 +1,41 @@
+name: 'Zola Deploy to Server'
+description: 'Build and deploy a Zola site to Server'
+author: 'Yongsheng Xu'
+
+inputs:
+
+  local:
+    description: 'Local file path'
+    required: true
+
+  remote:
+    description: 'Remote file path'
+    required: true
+
+  host:
+    description: 'Remote server address'
+    required: true
+
+  port:
+    description: 'Remote server port'
+    required: false
+    default: 22
+
+  user:
+    description: 'Remote server user'
+    required: true
+
+  key:
+    description: 'Remote server private key'
+    required: true
+
+  ensureRemote:
+    description: 'Ensure the existance of the remote file path'
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'zap'  
+  color: 'green'
