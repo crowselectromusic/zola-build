@@ -1,8 +1,8 @@
 FROM debian:stable-slim
 MAINTAINER Yongsheng Xu <chuxdesign@hotmail.com>
 
-LABEL "com.github.actions.name"="Zola Deploy to Server"
-LABEL "com.github.actions.description"="Build and deploy a Zola site to Your Server"
+LABEL "com.github.actions.name"="Zola Build"
+LABEL "com.github.actions.description"="Build a Zola site for deployment"
 LABEL "com.github.actions.color"="green"
 
 # Set default locale for the environment
