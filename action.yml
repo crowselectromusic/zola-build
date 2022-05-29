@@ -4,7 +4,7 @@ author: 'Cory Alder'
 
 inputs:
 
-  directory:
+  root:
     description: 'Zola directory'
     default: .
     required: false

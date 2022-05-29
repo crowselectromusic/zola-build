@@ -3,9 +3,8 @@ set -e
 set -o pipefail
 
 main() {
-    echo "Building zola site..."
-    cd "${INPUT_DIRECTORY}"
-    zola build
+    echo "Running zola with root ${INPUT_ROOT}"
+    zola --root "${INPUT_ROOT}" build
 }
 
 main "$@"
