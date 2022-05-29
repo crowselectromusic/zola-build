@@ -1,4 +1,4 @@
-from debian:stable-slim
+FROM debian:stable-slim
 MAINTAINER Yongsheng Xu <chuxdesign@hotmail.com>
 
 LABEL "com.github.actions.name"="Zola Deploy to Server"
@@ -18,4 +18,5 @@ RUN wget -q -O - \
 
 COPY entrypoint.sh /entrypoint.sh
 
+RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
