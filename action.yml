@@ -8,6 +8,9 @@ inputs:
     description: 'Zola directory'
     default: .
     required: false
+  base_url:
+    description: 'Zola base_url'
+    required: false
 
 runs:
   using: 'docker'
