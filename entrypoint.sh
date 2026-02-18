@@ -3,6 +3,7 @@ set -e
 set -o pipefail
 
 main() {
+    echo "Running $(zola --version)"
     echo "Running zola with root ${INPUT_ROOT}"
     if [[ -n "${INPUT_BASE_URL}" ]];  then
         echo "Running zola with base_url ${INPUT_BASE_URL}"

@@ -3,7 +3,6 @@ description: 'Build a Zola site for deployment'
 author: 'Cory Alder'
 
 inputs:
-
   root:
     description: 'Zola directory'
     default: .
