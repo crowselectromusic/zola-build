@@ -2,7 +2,7 @@
 
 Like [zola-scp-action](https://github.com/chux0519/zola-scp-action), but with only the build step not the deployment
 
-### Uses Zola version 0.21.0
+### Uses Zola version 0.23.6
 
 ## Example usage in github action:
 
